@@ -50,8 +50,8 @@
                          <div class="col-12">
                               <p class="samuraimart-product-label mt-2">
                                    {{ $recently_product->name }}<br>
-                                   <label class="samuraimart-star-rating" data-rate="{{ round($recommend_product->reviews()->avg('score') * 2 / 2) }}">
-                                        {{ round($recommend_product->reviews()->avg('score'), 1) }}
+                                   <label class="samuraimart-star-rating" data-rate="{{ round($recently_product->reviews()->avg('score') * 2 / 2) }}">
+                                        {{ round($recently_product->reviews()->avg('score'), 1) }}
                                    </label>
                                    <label>￥{{ $recently_product->price }}</label>
                               </p>

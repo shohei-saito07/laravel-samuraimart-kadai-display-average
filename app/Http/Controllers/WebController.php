@@ -19,9 +19,6 @@ class WebController extends Controller
 
         $recommend_products = Product::where('recommend_flag', true)->take(3)->get();
 
-        // Productに紐づいている商品の平均レビューを取得
-        // $averageRating = $product->reviews()->avg('score');
-
         return view('web.index', compact('major_categories', 'categories', 'recently_products', 'recommend_products'));
     }
 }
